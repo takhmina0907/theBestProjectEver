@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        let user = User(uid: "uid5", username: "Adeline", fullName: "Adeline Jones", email: "adeline@gmail.com")
+        user.save { (error) in
+            print(error?.localizedDescription)
+            print("whaaaat the heeell")
+        }
         return true
     }
 

@@ -15,6 +15,8 @@
 		2BE4038821173BDE002F1496 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4038721173BDE002F1496 /* GoogleService-Info.plist */; };
 		2BE4038F211741C2002F1496 /* BorderBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4038E211741C2002F1496 /* BorderBtn.swift */; };
 		2BE40391211744CE002F1496 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40390211744CE002F1496 /* MyPageViewController.swift */; };
+		2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4039321177576002F1496 /* FirebaseReference.swift */; };
+		2BE4039621177915002F1496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4039521177915002F1496 /* User.swift */; };
 		FDBFFCA4E1E3DC0D6CB36DF0 /* Pods_FinalEco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61D78649D34564435C14BDF /* Pods_FinalEco.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		2BE4038721173BDE002F1496 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BE4038E211741C2002F1496 /* BorderBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBtn.swift; sourceTree = "<group>"; };
 		2BE40390211744CE002F1496 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2BE4039321177576002F1496 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		2BE4039521177915002F1496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EECBF4C557F3B6E99587090 /* Pods-FinalEco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalEco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalEco/Pods-FinalEco.debug.xcconfig"; sourceTree = "<group>"; };
 		E61D78649D34564435C14BDF /* Pods_FinalEco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalEco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +87,7 @@
 		2BE403892117413E002F1496 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2BE4039721177919002F1496 /* Registration */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 				2BE40375211733F4002F1496 /* MainVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2BE4039721177919002F1496 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2BE4039321177576002F1496 /* FirebaseReference.swift */,
+				2BE4039521177915002F1496 /* User.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		86BAC298A90E79BAD63B02EE /* Pods */ = {
@@ -240,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */,
 				2BE40376211733F4002F1496 /* MainVC.swift in Sources */,
+				2BE4039621177915002F1496 /* User.swift in Sources */,
 				2BE4038F211741C2002F1496 /* BorderBtn.swift in Sources */,
 				2BE40374211733F4002F1496 /* AppDelegate.swift in Sources */,
 				2BE40391211744CE002F1496 /* MyPageViewController.swift in Sources */,
