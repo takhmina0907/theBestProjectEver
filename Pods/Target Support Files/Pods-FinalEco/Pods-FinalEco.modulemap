@@ -1,0 +1,6 @@
+framework module Pods_FinalEco {
+  umbrella header "Pods-FinalEco-umbrella.h"
+
+  export *
+  module * { export * }
+}
