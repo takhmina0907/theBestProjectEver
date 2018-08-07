@@ -22,10 +22,6 @@ class SignupTableViewController: UITableViewController {
 //            }
 //        }
 //    } user default shared instance
-    @IBAction func logouttap(_ sender: Any) {
-        try! Auth.auth().signOut()
-        self.performSegue(withIdentifier: "Showreg", sender: nil)
-    }
     
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var fullNameTF: UITextField!

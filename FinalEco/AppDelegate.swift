@@ -19,6 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        
+        window = UIWindow()
+        
+        if(UserModel.sharedInstance.checkUserLoggedIn()){
+            let storyboard = UIStoryboard(name:"Main", bundle: nil)
+            let menu = storyboard.instantiateViewController(withIdentifier: "tabbar")
+            self.window?.rootViewController = menu
+        }
+        else{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let registration = storyboard.instantiateViewController(withIdentifier: "MainVC")
+            self.window?.rootViewController = registration
+        }
+        
         return true
     }
 

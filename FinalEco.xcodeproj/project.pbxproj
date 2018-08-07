@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA8DE7A2119C00D008EEE84 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */; };
+		2BA8DE7C2119CAE6008EEE84 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7B2119CAE6008EEE84 /* userModel.swift */; };
+		2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */; };
 		2BE40374211733F4002F1496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40373211733F4002F1496 /* AppDelegate.swift */; };
 		2BE40376211733F4002F1496 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40375211733F4002F1496 /* MainVC.swift */; };
 		2BE40379211733F4002F1496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE40377211733F4002F1496 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		07B845F60AE0C5DDF5CB52F1 /* Pods-FinalEco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalEco.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalEco/Pods-FinalEco.release.xcconfig"; sourceTree = "<group>"; };
+		2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		2BA8DE7B2119CAE6008EEE84 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2BE40370211733F4002F1496 /* FinalEco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalEco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE40373211733F4002F1496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE40375211733F4002F1496 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 			children = (
 				2BE40390211744CE002F1496 /* MyPageViewController.swift */,
 				2BE40375211733F4002F1496 /* MainVC.swift */,
+				2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 				2BE4039321177576002F1496 /* FirebaseReference.swift */,
 				2BE4039521177915002F1496 /* User.swift */,
 				2BE403982117867F002F1496 /* SignupTableViewController.swift */,
+				2BA8DE7B2119CAE6008EEE84 /* userModel.swift */,
+				2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -258,12 +267,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE403992117867F002F1496 /* SignupTableViewController.swift in Sources */,
+				2BA8DE7A2119C00D008EEE84 /* LoginTableViewController.swift in Sources */,
+				2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */,
 				2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */,
 				2BE40376211733F4002F1496 /* MainVC.swift in Sources */,
 				2BE4039621177915002F1496 /* User.swift in Sources */,
 				2BE4038F211741C2002F1496 /* BorderBtn.swift in Sources */,
 				2BE40374211733F4002F1496 /* AppDelegate.swift in Sources */,
 				2BE40391211744CE002F1496 /* MyPageViewController.swift in Sources */,
+				2BA8DE7C2119CAE6008EEE84 /* userModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
