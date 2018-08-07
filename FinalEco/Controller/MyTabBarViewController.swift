@@ -20,7 +20,7 @@ class MyTabBarViewController: UITabBarController {
             if user != nil{
                 //something
             }else{
-                self.performSegue(withIdentifier: "mySegue", sender: nil)
+                self.performSegue(withIdentifier: "ShowTabView", sender: nil)
             }
         }
     }

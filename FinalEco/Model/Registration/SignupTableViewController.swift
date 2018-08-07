@@ -10,7 +10,23 @@ import UIKit
 import Firebase
 
 class SignupTableViewController: UITableViewController {
-
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        Auth.auth().addStateDidChangeListener { (auth, user) in
+//            if user != nil{
+//                //something
+//            }else{
+//                self.performSegue(withIdentifier: "ShowTabView", sender: nil)
+//            }
+//        }
+//    } user default shared instance
+    @IBAction func logouttap(_ sender: Any) {
+        try! Auth.auth().signOut()
+        self.performSegue(withIdentifier: "Showreg", sender: nil)
+    }
+    
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var fullNameTF: UITextField!
     @IBOutlet weak var usernameTF: UITextField!
@@ -18,48 +34,61 @@ class SignupTableViewController: UITableViewController {
     
     @IBAction func CreateAccounttap(_ sender: Any) {
         print("hey")
-        
-        if emailTF.text != ""
-        && (passwordTF.text?.characters.count)! > 7
-        && (usernameTF.text?.characters.count)! > 7
-        && fullNameTF.text != "" {
+        if emailTF.text != " "
+            && (passwordTF.text?.characters.count)! > 7
+            && (usernameTF.text?.characters.count)! > 7
+            && fullNameTF.text != " " {
             
-            let email = emailTF.text!
+            
+            
+            let email = emailTF.text! //phone
             let username = usernameTF.text!
             let password = passwordTF.text!
             let fullName = fullNameTF.text!
+            register(phone: email, password: username, name: fullName, c_password: password)
             
-            // sign up
-            Auth.auth().createUser(withEmail: email, password: password) { (firUser, error) in
-                
-                if error != nil {
-                    //add alert
-                    print(error)
-                    print(error?.localizedDescription)
-                } else if let firUser = firUser{
-                    
-                     let newUser = User(uid: firUser.user.uid, username: username, fullName: fullName, email: email)
-                    newUser.save(completion: { (error) in
-                        if error != nil{
-                            print("something wrong")
-                            print(error)
-                        }else{
-                            print("Successfuly sign up!")
-                            Auth.auth().signIn(withEmail: email, password: password, completion: { (firUser, error) in
-                                
-                                if let error = error{
-                                    print("O god..")
-                                    print(error)
-                                } else {
-                                    self.dismiss(animated: false, completion: nil)
-                                }
-                            })
-                        }
-                    })
-                }
-               
-            }
         }
+        else{
+            print("bad")
+        }
+
+
     }
+    
+    func register(phone: String, password: String, name: String,c_password: String){
+        let json: [String: String] = ["phone": phone, "password" : password, "name": name, "c_password": c_password]
+        
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json, options: [])
+        
+        // create post request
+        let url = URL(string: "http://192.168.137.1:8000/api/register")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // insert json data to the request
+        request.httpBody = jsonData
+        
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)//if success go to login 
+                
+            }
+            
+        }
+        task.resume()
+    }
+    
+    
+    
+    
     
 }

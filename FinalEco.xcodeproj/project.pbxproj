@@ -18,7 +18,6 @@
 		2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4039321177576002F1496 /* FirebaseReference.swift */; };
 		2BE4039621177915002F1496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4039521177915002F1496 /* User.swift */; };
 		2BE403992117867F002F1496 /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE403982117867F002F1496 /* SignupTableViewController.swift */; };
-		2BE4039B211790F0002F1496 /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4039A211790F0002F1496 /* MyTabBarViewController.swift */; };
 		FDBFFCA4E1E3DC0D6CB36DF0 /* Pods_FinalEco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61D78649D34564435C14BDF /* Pods_FinalEco.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		2BE4039321177576002F1496 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		2BE4039521177915002F1496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2BE403982117867F002F1496 /* SignupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
-		2BE4039A211790F0002F1496 /* MyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
 		8EECBF4C557F3B6E99587090 /* Pods-FinalEco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalEco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalEco/Pods-FinalEco.debug.xcconfig"; sourceTree = "<group>"; };
 		E61D78649D34564435C14BDF /* Pods_FinalEco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalEco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,7 +107,6 @@
 			children = (
 				2BE40390211744CE002F1496 /* MyPageViewController.swift */,
 				2BE40375211733F4002F1496 /* MainVC.swift */,
-				2BE4039A211790F0002F1496 /* MyTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE4039B211790F0002F1496 /* MyTabBarViewController.swift in Sources */,
 				2BE403992117867F002F1496 /* SignupTableViewController.swift in Sources */,
 				2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */,
 				2BE40376211733F4002F1496 /* MainVC.swift in Sources */,
