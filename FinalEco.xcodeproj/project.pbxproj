@@ -10,6 +10,7 @@
 		2BA8DE7A2119C00D008EEE84 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */; };
 		2BA8DE7C2119CAE6008EEE84 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7B2119CAE6008EEE84 /* userModel.swift */; };
 		2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */; };
+		2BA8DE802119D830008EEE84 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7F2119D830008EEE84 /* MapVC.swift */; };
 		2BE40374211733F4002F1496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40373211733F4002F1496 /* AppDelegate.swift */; };
 		2BE40376211733F4002F1496 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40375211733F4002F1496 /* MainVC.swift */; };
 		2BE40379211733F4002F1496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE40377211733F4002F1496 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		2BA8DE7B2119CAE6008EEE84 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2BA8DE7F2119D830008EEE84 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		2BE40370211733F4002F1496 /* FinalEco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalEco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE40373211733F4002F1496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE40375211733F4002F1496 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				2BE40390211744CE002F1496 /* MyPageViewController.swift */,
 				2BE40375211733F4002F1496 /* MainVC.swift */,
 				2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */,
+				2BA8DE7F2119D830008EEE84 /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */,
 				2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */,
 				2BE40376211733F4002F1496 /* MainVC.swift in Sources */,
+				2BA8DE802119D830008EEE84 /* MapVC.swift in Sources */,
 				2BE4039621177915002F1496 /* User.swift in Sources */,
 				2BE4038F211741C2002F1496 /* BorderBtn.swift in Sources */,
 				2BE40374211733F4002F1496 /* AppDelegate.swift in Sources */,

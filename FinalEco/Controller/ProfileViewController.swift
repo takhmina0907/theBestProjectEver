@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController {
 
     UserModel.sharedInstance.removeUserDefault()
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let controller = storyboard.instantiateViewController(withIdentifier: "MainVC")
+    let controller = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
     self.present(controller, animated: true, completion: nil)
         
     

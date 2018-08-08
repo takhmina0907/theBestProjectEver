@@ -81,7 +81,7 @@ class LoginTableViewController: UITableViewController {
                             self.present(controller, animated: true, completion: nil)
                         }
 //                        UserDefaults.standard.set(responseJSON["id"]!, forKey: "ID")
-//                        //print(defaults.object(forKey: "Phone") as? [String] ?? [String]())
+//                        print(defaults.object(forKey: "Phone") as? [String] ?? [String]())
 //                        print(UserDefaults.standard.string(forKey: "ID"))
                     }
                 }

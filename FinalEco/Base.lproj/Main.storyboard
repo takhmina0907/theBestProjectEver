@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EkR-XG-ER8">
-                                <rect key="frame" x="117" y="159" width="140.5" height="142"/>
+                                <rect key="frame" x="117" y="115" width="140.5" height="142"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd4-3h-yq4">
                                         <rect key="frame" x="3" y="0.0" width="135" height="44"/>
@@ -526,16 +526,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by5-40-VeI">
-                                <rect key="frame" x="16" y="318" width="343" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log out"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by5-40-VeI">
+                                <rect key="frame" x="16" y="508" width="343" height="60"/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PYU-xx-fWX"/>
+                                    <constraint firstAttribute="width" constant="343" id="vCY-qg-tm5"/>
+                                </constraints>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="LogOutTapped:" destination="HJb-Ft-vJU" eventType="touchUpInside" id="LG8-sA-fWl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lNS-gx-e0R" firstAttribute="trailing" secondItem="by5-40-VeI" secondAttribute="trailing" constant="16" id="74D-ey-fyj"/>
+                            <constraint firstItem="lNS-gx-e0R" firstAttribute="bottom" secondItem="by5-40-VeI" secondAttribute="bottom" constant="50" id="7ZW-g7-3Ug"/>
+                            <constraint firstItem="by5-40-VeI" firstAttribute="centerX" secondItem="Azs-8g-8ga" secondAttribute="centerX" id="Apv-6Z-sK6"/>
+                            <constraint firstItem="by5-40-VeI" firstAttribute="leading" secondItem="lNS-gx-e0R" secondAttribute="leading" constant="16" id="cao-hc-MUD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lNS-gx-e0R"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="icon-profile" id="Ata-pN-ccI"/>
@@ -547,14 +559,33 @@
         <!--Map-->
         <scene sceneID="khV-35-1fi">
             <objects>
-                <viewController id="Ms7-FS-xu7" sceneMemberID="viewController">
+                <viewController id="Ms7-FS-xu7" customClass="MapVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3z7-0r-W8l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-66-u7B">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationButton" translatesAutoresizingMaskIntoConstraints="NO" id="5pI-l7-mg2">
+                                <rect key="frame" x="292" y="533" width="67" height="67"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Fl-66-u7B" firstAttribute="top" secondItem="8mb-sM-ebt" secondAttribute="top" id="1XD-db-xTg"/>
+                            <constraint firstItem="8mb-sM-ebt" firstAttribute="trailing" secondItem="5pI-l7-mg2" secondAttribute="trailing" constant="16" id="BlA-Dg-Po5"/>
+                            <constraint firstItem="6Fl-66-u7B" firstAttribute="bottom" secondItem="8mb-sM-ebt" secondAttribute="bottom" id="Cwv-0O-pUC"/>
+                            <constraint firstItem="6Fl-66-u7B" firstAttribute="trailing" secondItem="8mb-sM-ebt" secondAttribute="trailing" id="KGV-Kh-Tc7"/>
+                            <constraint firstItem="6Fl-66-u7B" firstAttribute="leading" secondItem="8mb-sM-ebt" secondAttribute="leading" id="L3r-nd-yYg"/>
+                            <constraint firstItem="8mb-sM-ebt" firstAttribute="bottom" secondItem="5pI-l7-mg2" secondAttribute="bottom" constant="18" id="PBP-e3-qag"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8mb-sM-ebt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="placeholder" id="QJ7-ZY-veV"/>
+                    <connections>
+                        <outlet property="mapView" destination="6Fl-66-u7B" id="LKL-18-1pn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwH-6I-1q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -858,6 +889,7 @@
         <image name="icon-fullName" width="100" height="100"/>
         <image name="icon-password" width="100" height="100"/>
         <image name="icon-profile" width="25" height="25"/>
+        <image name="locationButton" width="67" height="67"/>
         <image name="note" width="21" height="21"/>
         <image name="placeholder" width="21" height="21"/>
         <image name="planet-earth" width="512" height="512"/>
@@ -865,8 +897,7 @@
         <image name="think-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cvS-aP-4ml"/>
-        <segue reference="Vlk-bt-l0j"/>
-        <segue reference="GZg-WB-D4n"/>
+        <segue reference="LPv-gX-uDV"/>
+        <segue reference="ogj-pD-969"/>
     </inferredMetricsTieBreakers>
 </document>
