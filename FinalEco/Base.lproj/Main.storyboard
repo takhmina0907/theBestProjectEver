@@ -564,27 +564,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-66-u7B">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-66-u7B">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationButton" translatesAutoresizingMaskIntoConstraints="NO" id="5pI-l7-mg2">
-                                <rect key="frame" x="292" y="533" width="67" height="67"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blb-Ov-Ei5">
+                                <rect key="frame" x="292" y="535" width="67" height="67"/>
+                                <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="MapButtonTapped:" destination="Ms7-FS-xu7" eventType="touchUpInside" id="MPx-t9-X8j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Fl-66-u7B" firstAttribute="top" secondItem="8mb-sM-ebt" secondAttribute="top" id="1XD-db-xTg"/>
-                            <constraint firstItem="8mb-sM-ebt" firstAttribute="trailing" secondItem="5pI-l7-mg2" secondAttribute="trailing" constant="16" id="BlA-Dg-Po5"/>
                             <constraint firstItem="6Fl-66-u7B" firstAttribute="bottom" secondItem="8mb-sM-ebt" secondAttribute="bottom" id="Cwv-0O-pUC"/>
+                            <constraint firstItem="8mb-sM-ebt" firstAttribute="bottom" secondItem="blb-Ov-Ei5" secondAttribute="bottom" constant="16" id="Gvn-2r-2o3"/>
                             <constraint firstItem="6Fl-66-u7B" firstAttribute="trailing" secondItem="8mb-sM-ebt" secondAttribute="trailing" id="KGV-Kh-Tc7"/>
                             <constraint firstItem="6Fl-66-u7B" firstAttribute="leading" secondItem="8mb-sM-ebt" secondAttribute="leading" id="L3r-nd-yYg"/>
-                            <constraint firstItem="8mb-sM-ebt" firstAttribute="bottom" secondItem="5pI-l7-mg2" secondAttribute="bottom" constant="18" id="PBP-e3-qag"/>
+                            <constraint firstItem="8mb-sM-ebt" firstAttribute="trailing" secondItem="blb-Ov-Ei5" secondAttribute="trailing" constant="16" id="ePc-ds-Omz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8mb-sM-ebt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="placeholder" id="QJ7-ZY-veV"/>
                     <connections>
-                        <outlet property="mapView" destination="6Fl-66-u7B" id="LKL-18-1pn"/>
+                        <outlet property="mapView" destination="6Fl-66-u7B" id="7Yp-bL-K5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwH-6I-1q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -898,6 +902,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LPv-gX-uDV"/>
-        <segue reference="ogj-pD-969"/>
+        <segue reference="7ca-89-g0t"/>
     </inferredMetricsTieBreakers>
 </document>
