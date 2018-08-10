@@ -333,7 +333,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="CreateAccounttap:" destination="PEV-UN-BWG" eventType="touchUpInside" id="6Z3-BX-mTg"/>
-                                                        <segue destination="mfR-Io-wjd" kind="show" id="v6F-eZ-UAe"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -367,6 +366,7 @@
                         <outlet property="passwordTF" destination="UFL-ki-t8s" id="vy1-su-Mvv"/>
                         <outlet property="usernameTF" destination="wPV-GN-49S" id="hMI-Q2-7Wv"/>
                         <segue destination="i3B-xX-aFI" kind="show" identifier="showLogin" id="LPv-gX-uDV"/>
+                        <segue destination="mfR-Io-wjd" kind="show" id="aOJ-Et-Dxa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbU-8O-Igf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -376,7 +376,7 @@
         <!--Login-->
         <scene sceneID="Io1-ZL-vCl">
             <objects>
-                <tableViewController id="i3B-xX-aFI" customClass="LoginTableViewController" customModule="FinalEco" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Login" id="i3B-xX-aFI" customClass="LoginTableViewController" customModule="FinalEco" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="XFp-m8-YLY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1167,9 +1167,9 @@
         <image name="think-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cS0-C7-xJX"/>
+        <segue reference="aOJ-Et-Dxa"/>
         <segue reference="deW-19-04k"/>
         <segue reference="LPv-gX-uDV"/>
-        <segue reference="7ca-89-g0t"/>
+        <segue reference="GZg-WB-D4n"/>
     </inferredMetricsTieBreakers>
 </document>

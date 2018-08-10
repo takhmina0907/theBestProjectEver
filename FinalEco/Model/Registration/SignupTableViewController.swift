@@ -81,12 +81,33 @@ class SignupTableViewController: UITableViewController {
                 print(error?.localizedDescription ?? "No data")
                 return
             }
-            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let responseJSON = responseJSON as? [String: Any] {
-                print(responseJSON)//if success go to login 
+//            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+//            if let responseJSON = responseJSON as? [String: Any] {
+//                print(responseJSON)//if success go to login
+//
+//            }
+//
+//        }
+            if let httpStatus = response as? HTTPURLResponse {           // check for http errors
+                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                print(httpStatus.statusCode)
+                if httpStatus.statusCode == 200{
+                    if let responseJSON = responseJSON as? [String: Any] {
+                        DispatchQueue.main.async {
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let controller = storyboard.instantiateViewController(withIdentifier: "Login")
+                            self.present(controller, animated: true, completion: nil)
+                        }
+                        //                        UserDefaults.standard.set(responseJSON["id"]!, forKey: "ID")
+                        //                        print(defaults.object(forKey: "Phone") as? [String] ?? [String]())
+                        //                        print(UserDefaults.standard.string(forKey: "ID"))
+                    }
+                }
+                else{
+                    print("error")
+                }
                 
             }
-            
         }
         task.resume()
     }
