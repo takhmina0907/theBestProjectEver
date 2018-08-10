@@ -246,7 +246,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile" translatesAutoresizingMaskIntoConstraints="NO" id="dya-Kb-7Ua">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="dya-Kb-7Ua">
                                                     <rect key="frame" x="16" y="7" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Hf8-yq-3h2"/>
@@ -257,7 +257,7 @@
                                                     <rect key="frame" x="54" y="7" width="305" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -1157,9 +1157,9 @@
         <image name="think-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cS0-C7-xJX"/>
+        <segue reference="CAk-el-0bN"/>
         <segue reference="deW-19-04k"/>
         <segue reference="LPv-gX-uDV"/>
-        <segue reference="l3u-ng-Ovd"/>
+        <segue reference="7ca-89-g0t"/>
     </inferredMetricsTieBreakers>
 </document>
