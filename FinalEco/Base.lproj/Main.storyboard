@@ -658,6 +658,7 @@
                                 </state>
                                 <connections>
                                     <action selector="StartBtnPressed:" destination="JDC-gp-cbc" eventType="touchUpInside" id="RtU-Ej-SCD"/>
+                                    <segue destination="MPw-CA-Kpu" kind="show" id="WHt-xG-evB"/>
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="17f-xk-WDk">
@@ -705,6 +706,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJp-V5-OB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4872.8000000000002" y="695.80209895052474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ii2-VS-t8w">
+            <objects>
+                <viewController id="5jN-x4-OXh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pQI-nx-lJL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дорогой друг! Рады что ты присоединился к нам! Связись с нашим волонтером +7707-777-77-77" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eya-tJ-8xt">
+                                <rect key="frame" x="16" y="227" width="343" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-0m-iXP">
+                                <rect key="frame" x="16" y="583" width="343" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.83137254900000002" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mfR-Io-wjd" kind="show" id="cS0-C7-xJX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="1" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="F57-xg-96J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nsc-Ka-TMj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nd-9C-mR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6378" y="700"/>
         </scene>
         <!--Profile-->
         <scene sceneID="QQ5-3V-P3M">
@@ -1083,6 +1121,26 @@
             </objects>
             <point key="canvasLocation" x="1000.8" y="-654.42278860569718"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Czf-58-PG2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MPw-CA-Kpu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vXx-M0-I70">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.52941176469999995" green="0.83137254900000002" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5jN-x4-OXh" kind="relationship" relationship="rootViewController" id="MUf-6h-HcL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eo-M0-tgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5660" y="700.29985007496259"/>
+        </scene>
     </scenes>
     <resources>
         <image name="emma-simpson-153970-unsplash" width="5472" height="3648"/>
@@ -1099,7 +1157,7 @@
         <image name="think-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cXd-W0-cyP"/>
+        <segue reference="cS0-C7-xJX"/>
         <segue reference="deW-19-04k"/>
         <segue reference="LPv-gX-uDV"/>
         <segue reference="l3u-ng-Ovd"/>
