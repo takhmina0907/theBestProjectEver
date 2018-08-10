@@ -43,9 +43,17 @@ class SignupTableViewController: UITableViewController {
             let fullName = fullNameTF.text!
             register(phone: email, password: username, name: fullName, c_password: password)
             
-        }
-        else{
-            print("bad")
+        }//else
+        if (passwordTF.text?.characters.count)! < 7 {
+            let alert = UIAlertController(title: "Error!",
+                                          message: "Password must be greater than 7 characters!",
+                                          preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
         }
 
 

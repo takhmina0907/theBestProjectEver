@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B242FC3211D433700BA3BB6 /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B242FC2211D433700BA3BB6 /* QuestViewController.swift */; };
+		2B242FC5211D437800BA3BB6 /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B242FC4211D437800BA3BB6 /* QuestTableViewCell.swift */; };
+		2B242FC7211D452700BA3BB6 /* Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B242FC6211D452700BA3BB6 /* Quests.swift */; };
+		2B242FC9211D465D00BA3BB6 /* QuestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B242FC8211D465D00BA3BB6 /* QuestDetailViewController.swift */; };
 		2BA8DE7A2119C00D008EEE84 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */; };
 		2BA8DE7C2119CAE6008EEE84 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7B2119CAE6008EEE84 /* userModel.swift */; };
 		2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		07B845F60AE0C5DDF5CB52F1 /* Pods-FinalEco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalEco.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalEco/Pods-FinalEco.release.xcconfig"; sourceTree = "<group>"; };
+		2B242FC2211D433700BA3BB6 /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
+		2B242FC4211D437800BA3BB6 /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
+		2B242FC6211D452700BA3BB6 /* Quests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quests.swift; sourceTree = "<group>"; };
+		2B242FC8211D465D00BA3BB6 /* QuestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailViewController.swift; sourceTree = "<group>"; };
 		2BA8DE792119C00D008EEE84 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		2BA8DE7B2119CAE6008EEE84 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +68,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B242FC1211D430800BA3BB6 /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				2B242FC2211D433700BA3BB6 /* QuestViewController.swift */,
+				2B242FC4211D437800BA3BB6 /* QuestTableViewCell.swift */,
+				2B242FC8211D465D00BA3BB6 /* QuestDetailViewController.swift */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
 		2BE40367211733F4002F1496 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2BE4039721177919002F1496 /* Registration */,
+				2B242FC6211D452700BA3BB6 /* Quests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +132,7 @@
 		2BE4038B2117414B002F1496 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2B242FC1211D430800BA3BB6 /* Quest */,
 				2BE40390211744CE002F1496 /* MyPageViewController.swift */,
 				2BE40375211733F4002F1496 /* MainVC.swift */,
 				2BA8DE7D2119CF1D008EEE84 /* ProfileViewController.swift */,
@@ -272,8 +292,12 @@
 				2BE403992117867F002F1496 /* SignupTableViewController.swift in Sources */,
 				2BA8DE7A2119C00D008EEE84 /* LoginTableViewController.swift in Sources */,
 				2BA8DE7E2119CF1D008EEE84 /* ProfileViewController.swift in Sources */,
+				2B242FC5211D437800BA3BB6 /* QuestTableViewCell.swift in Sources */,
 				2BE4039421177576002F1496 /* FirebaseReference.swift in Sources */,
 				2BE40376211733F4002F1496 /* MainVC.swift in Sources */,
+				2B242FC7211D452700BA3BB6 /* Quests.swift in Sources */,
+				2B242FC3211D433700BA3BB6 /* QuestViewController.swift in Sources */,
+				2B242FC9211D465D00BA3BB6 /* QuestDetailViewController.swift in Sources */,
 				2BA8DE802119D830008EEE84 /* MapVC.swift in Sources */,
 				2BE4039621177915002F1496 /* User.swift in Sources */,
 				2BE4038F211741C2002F1496 /* BorderBtn.swift in Sources */,
