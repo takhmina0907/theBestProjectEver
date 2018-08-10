@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYl-9X-LeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="373"/>
+            <point key="canvasLocation" x="756" y="436"/>
         </scene>
         <!--Create a New Accont-->
         <scene sceneID="RF5-PW-0Lj">
@@ -512,7 +512,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yva-8E-VeF">
-                                <rect key="frame" x="0.0" y="20" width="375" height="538"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myQuest" rowHeight="170" id="qVM-j3-aiF" customClass="QuestTableViewCell" customModule="FinalEco" customModuleProvider="target">
@@ -529,9 +529,8 @@
                                                         <constraint firstAttribute="height" constant="170" id="quq-E9-arT"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5S-gR-Gog">
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5S-gR-Gog">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3730201198630137" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz3-xq-S2u">
@@ -551,10 +550,14 @@
                                             <constraints>
                                                 <constraint firstItem="kz3-xq-S2u" firstAttribute="top" secondItem="pg9-Z2-lH2" secondAttribute="topMargin" constant="110" id="2G4-lq-td5"/>
                                                 <constraint firstItem="TT0-Qr-8k5" firstAttribute="top" secondItem="pg9-Z2-lH2" secondAttribute="top" id="2XW-OY-wt4"/>
+                                                <constraint firstItem="s5S-gR-Gog" firstAttribute="top" secondItem="pg9-Z2-lH2" secondAttribute="top" id="KlB-Oj-4H2"/>
                                                 <constraint firstItem="kz3-xq-S2u" firstAttribute="leading" secondItem="pg9-Z2-lH2" secondAttribute="leadingMargin" id="Pl5-L1-FAm"/>
+                                                <constraint firstItem="s5S-gR-Gog" firstAttribute="leading" secondItem="pg9-Z2-lH2" secondAttribute="leading" id="Sk3-KI-xkD"/>
                                                 <constraint firstAttribute="trailing" secondItem="TT0-Qr-8k5" secondAttribute="trailing" id="Uct-da-5yd"/>
+                                                <constraint firstAttribute="bottom" secondItem="s5S-gR-Gog" secondAttribute="bottom" id="gzS-K0-IZ8"/>
                                                 <constraint firstItem="kz3-xq-S2u" firstAttribute="trailing" secondItem="pg9-Z2-lH2" secondAttribute="trailingMargin" id="h8b-Pc-ndC"/>
                                                 <constraint firstAttribute="bottom" secondItem="TT0-Qr-8k5" secondAttribute="bottom" id="hZv-SL-4A9"/>
+                                                <constraint firstAttribute="trailing" secondItem="s5S-gR-Gog" secondAttribute="trailing" id="v40-Qi-Nge"/>
                                                 <constraint firstItem="TT0-Qr-8k5" firstAttribute="leading" secondItem="pg9-Z2-lH2" secondAttribute="leading" id="y4g-Az-UAT"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -612,7 +615,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="mfR-Io-wjd" kind="show" id="ioU-sH-Q3p"/>
+                                            <segue destination="biq-dS-pdW" kind="show" id="deW-19-04k"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -725,13 +728,22 @@
                                     <action selector="LogOutTapped:" destination="HJb-Ft-vJU" eventType="touchUpInside" id="LG8-sA-fWl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ждем тебя в следующий раз! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-Jx-5qk">
+                                <rect key="frame" x="16" y="264" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lNS-gx-e0R" firstAttribute="trailing" secondItem="by5-40-VeI" secondAttribute="trailing" constant="16" id="74D-ey-fyj"/>
                             <constraint firstItem="lNS-gx-e0R" firstAttribute="bottom" secondItem="by5-40-VeI" secondAttribute="bottom" constant="50" id="7ZW-g7-3Ug"/>
+                            <constraint firstItem="9eD-Jx-5qk" firstAttribute="leading" secondItem="lNS-gx-e0R" secondAttribute="leading" constant="16" id="8jg-ns-Gzl"/>
+                            <constraint firstItem="9eD-Jx-5qk" firstAttribute="top" secondItem="lNS-gx-e0R" secondAttribute="top" constant="200" id="8qX-wa-fos"/>
                             <constraint firstItem="by5-40-VeI" firstAttribute="centerX" secondItem="Azs-8g-8ga" secondAttribute="centerX" id="Apv-6Z-sK6"/>
                             <constraint firstItem="by5-40-VeI" firstAttribute="leading" secondItem="lNS-gx-e0R" secondAttribute="leading" constant="16" id="cao-hc-MUD"/>
+                            <constraint firstItem="lNS-gx-e0R" firstAttribute="trailing" secondItem="9eD-Jx-5qk" secondAttribute="trailing" constant="16" id="hBi-A9-29q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lNS-gx-e0R"/>
                     </view>
@@ -739,7 +751,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3c-RL-yG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5652" y="5"/>
+            <point key="canvasLocation" x="5652" y="4.9475262368815596"/>
         </scene>
         <!--Map-->
         <scene sceneID="khV-35-1fi">
@@ -750,7 +762,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-66-u7B">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blb-Ov-Ei5">
                                 <rect key="frame" x="292" y="535" width="67" height="67"/>
@@ -871,7 +883,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="u06-1p-zjW"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                <string key="text">Каждый год казахстанцы генерируют 13 тысяч тон в день твердых бытовых отходов, или 5 млн тонн в месяц. А один человек производит 300-400 кг твердых бытовых отходов в год. 
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -934,7 +947,7 @@
                                     <constraint firstAttribute="height" constant="220" id="4Sp-De-xJV"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="gJY-dm-Xay"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                <string key="text">Выделяя токсичные вещества мусор разрушает эко-структуру нашей почвы. Все отходы представляют угрозу для окружающей среды, многие из них опасны для здоровья человека.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -993,14 +1006,13 @@
                                     <constraint firstAttribute="height" constant="121" id="efN-Cm-KyH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-5M-lQu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начнем же думать о нашей экосистеме сейчас для будущего поколения!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-5M-lQu">
                                 <rect key="frame" x="16" y="268" width="343" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="EkO-rh-PaD"/>
                                     <constraint firstAttribute="height" constant="220" id="HDT-wq-x7D"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="sHX-ub-SfM"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1087,8 +1099,9 @@
         <image name="think-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ioU-sH-Q3p"/>
+        <segue reference="cXd-W0-cyP"/>
+        <segue reference="deW-19-04k"/>
         <segue reference="LPv-gX-uDV"/>
-        <segue reference="GZg-WB-D4n"/>
+        <segue reference="l3u-ng-Ovd"/>
     </inferredMetricsTieBreakers>
 </document>
